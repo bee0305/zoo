@@ -1,0 +1,18 @@
+version: "3.8"
+services:  
+  django:
+    container_name: back_django
+    restart: always
+    build: 
+      context: .
+      dockerfile: ./compose/django/Dockerfile  
+    volumes:
+      - .:/back/app
+    ports:
+      - 7000:7000  
+
+    expose:
+      - 8000
+    
+
+  

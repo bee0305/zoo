@@ -1,0 +1,22 @@
+Required:
+
+models 
+    User
+    Doctor
+    Pet
+    Schedule
+    Appointment
+
+Flow:
+    anonymous user can start making appointment 
+        but at the end
+        1. can/should make an account
+        2. or at least fulfill contact form with data about a pet
+    appointment  should be confirmed via email   
+
+Tools:
+    django-templates vs REST
+    (djang-foormtools vs django-fobi)
+    celery
+    celery-beat
+    Docker
